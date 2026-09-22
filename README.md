@@ -1,3 +1,5 @@
+## App Structure:
+
                          ┌───────────────┐
                          │     USER      │
                          └───────┬───────┘
@@ -44,3 +46,14 @@
                     ┌─────────┴─────────┐
                     ▼                   ▼
                Markdown/HTML           PDF
+
+
+## Technology :-
+
+***Backend***
+- FAST API
+- Celery Worker
+
+***Frontend***
+- Next js 
+
