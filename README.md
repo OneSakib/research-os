@@ -1,4 +1,46 @@
-  Researcher   Researcher   Researcher
-       │           │           │
-       ▼           ▼           ▼
-   Web Search   Papers       GitHub
+                         ┌───────────────┐
+                         │     USER      │
+                         └───────┬───────┘
+                                 │
+                                 ▼
+                      ┌────────────────────┐
+                      │     SUPERVISOR     │
+                      │                    │
+                      │ Task Decomposition │
+                      └─────────┬──────────┘
+                                │
+             ┌──────────────────┼──────────────────┐
+             │                  │                  │
+             ▼                  ▼                  ▼
+     ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+     │ Web Agent   │    │ Paper Agent │    │ GitHub Agent│
+     │             │    │             │    │             │
+     │ Tavily      │    │ Semantic    │    │ GitHub API  │
+     │ Search      │    │ Scholar     │    │             │
+     └──────┬──────┘    └──────┬──────┘    └──────┬──────┘
+            │                  │                  │
+            └──────────────────┼──────────────────┘
+                               │
+                               ▼
+                    ┌────────────────────┐
+                    │    FACT CHECKER    │
+                    │                    │
+                    │ Cross-source       │
+                    │ verification      │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │     SYNTHESIZER    │
+                    │                    │
+                    │ Findings → Insights│
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │    REPORT WRITER   │
+                    └─────────┬──────────┘
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+               Markdown/HTML           PDF
