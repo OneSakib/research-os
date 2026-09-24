@@ -4,4 +4,8 @@ langgraph
 langchain-tavily
 tavily
 python-dotenv
-ipykernel
+ipykernel                                                     
+fastapi
+pyjwt
+uvicorn
+python-multipart
